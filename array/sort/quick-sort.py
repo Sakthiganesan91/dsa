@@ -8,12 +8,11 @@ def partition(arr,lower,upper):
     while(start<end):
 
         #start will be at the position where the arr[start] will be >= than pivot
-        while start <= end and pivot >= arr[start]:
+        while pivot >= arr[start]:
             start += 1
         #end will be at the position where the arr[end] will be less than pivot
-        while end >= start and pivot < arr[end]:
+        while pivot < arr[end]:
             end -= 1
-
 
         #if start is less than end then we are swapping elements of index start and end
         if(start<end):
